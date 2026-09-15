@@ -3,4 +3,14 @@ body {
   color: white;
 }
 
+a {
+  color: orange;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+a:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
 /*# sourceMappingURL=variables.css.map */

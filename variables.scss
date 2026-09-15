@@ -1,9 +1,23 @@
-$mainColor : black;
+
+$bg-color: black;
+$text-color: white;
+$link-color: orange;
+$link-hover-color: red;
 
 
-body{
-
-    background-color:$mainColor;
-    color:white;
-
+body {
+  background-color: $bg-color;
+  color: $text-color;
 }
+
+a {
+  color: $link-color;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    color: $link-hover-color;
+    transform: scale(1.2);
+  }
+}
+
